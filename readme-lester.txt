@@ -10,7 +10,36 @@
     git init
     git add .
     git commit -m "first commit"
+5. check the remote connection and if needed set it to your gitHub account repo
+    
+    git remote get-url origin
 
+    you will notice it is pointing to the remote repository we copied it from to our local machine
+    https://github.com/devopsjourney1/mygitactions.git
+
+    Set the remote to your own gitHub repo
+    git remote set-url origin https://github.com/lesterw53679/mygitHubActions
+
+6. lets explore some other git commmands you can run 
+
+    git branch    //this will list all the branches in your project (only main at this point)
+    git branch newFeature  //this will create a new branch in your local project called 'newFeature'
+    git branch    // now you will see we have two branches
+    git checkout newFeature  //this will activate branch 
+    git branch       //see which branch is highlighted
+    git checkout main  //switch back to the main branch
+    git branch -D newFeature   //delete this branch, we're not going to do anything with it right now
+
+    (we've added a file modified it since we last staged and commit, lets do that first)
+    git add .
+    git commit -m "added some files and modified others"
+
+    git push -u origin main    // this will push all the changes to gitHub, do another commit if you wish
+
+    
+
+
+,
 
 https://github.com/lesterw53679/mygitHubActions
 
