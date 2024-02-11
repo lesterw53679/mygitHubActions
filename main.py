@@ -3,6 +3,7 @@ def hello():
     """Function printing hi."""
     print("hi")
 
+
 def bye():
     """Function printing bye."""
     print("bye")
@@ -10,4 +11,4 @@ def bye():
 print(hello())
 print(bye())
 
-print("hello GitHub Actions")
+print("hello")
